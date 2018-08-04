@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lipstick"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:weightSum="11.25"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent
+">
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="회원가입"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:gravity="center"
+                android:text="이거모임은 매일매일 심심해 미치는
+당신을 위한 번개모임 앱입니다!"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:gravity="center"
+                android:text="처음 가입하시네요! 어서오세요!"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="24dp"
+            android:background="@drawable/search_edit"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextLabel"
+            android:layout_height="0dp">
+            <android.support.design.widget.TextInputEditText
+                android:inputType="number"
+                android:id="@+id/edit_birth"
+                android:gravity="center|left"
+                android:hint="이름"
+                android:backgroundTint="@color/white"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/search_edit"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextLabel"
+            android:layout_height="0dp">
+            <android.support.design.widget.TextInputEditText
+                android:inputType="textPassword"
+                android:id="@+id/edit_password"
+                android:gravity="center|left"
+                android:hint="나이"
+                android:textSize="12dp"
+                android:backgroundTint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <Spinner
+            android:id="@+id/spinner1"
+            android:foregroundTint="@color/lipstick"
+            android:tooltipText="시/도"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/search_edit"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </Spinner>
+        <Spinner
+            android:id="@+id/spinner2"
+            android:foregroundTint="@color/lipstick"
+            android:tooltipText="시/군/구"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/search_edit"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </Spinner>
+        <android.support.v4.widget.Space
+            android:layout_weight="2.7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/btn_back"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:background="@color/lipstick"
+                android:text="이전"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btn_next"
+                android:textColor="@color/lipstick"
+                android:layout_weight="1"
+                android:background="@drawable/login_button"
+                android:text="다음"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

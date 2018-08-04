@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="30dp">
+    <View
+        android:background="#19000000"
+        android:layout_width="224dp"
+        android:layout_height="3dp">
+    </View>
+    <android.support.v4.widget.Space
+        android:layout_width="16dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/text_recommand"
+        android:letterSpacing="0.01"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/lipstick"
+        android:text="추천순"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <android.support.v4.widget.Space
+        android:layout_width="16dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/text_far"
+        android:letterSpacing="0.01"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#909090"
+        android:text="거리순"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</LinearLayout>
